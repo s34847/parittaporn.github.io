@@ -193,3 +193,11 @@ footer {
     object-fit: cover !important;
     object-position: center 20% !important;
 }
+
+.activity-card img,
+.activity-card div img {
+    height: auto !important;
+    max-height: 280px !important;
+    object-fit: contain !important;
+    background-color: #fff0f3;
+}
