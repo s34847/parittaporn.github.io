@@ -187,3 +187,9 @@ footer {
 .activity-card img {
     object-position: top !important;
 }
+
+.activity-card div img {
+    height: 220px !important;
+    object-fit: cover !important;
+    object-position: center 20% !important;
+}
