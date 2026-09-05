@@ -201,3 +201,16 @@ footer {
     object-fit: contain !important;
     background-color: #fff0f3;
 }
+.activity-card .img-container {
+    display: flex;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.activity-card .img-container img {
+    width: 50%;
+    height: 240px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+}
