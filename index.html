@@ -34,15 +34,100 @@ p { font-size: 18px; line-height: 1.6; }
   <a href="portfolio.html" class="btn"> next</a>
 </body>
 </html>
-<section class="container section">
-    <h2>ทักษะและความสามารถ (Skills)</h2>
-    <div class="card">
-        <div class="skills-grid">
-            <span class="skill-tag">Communication</span>
-            <span class="skill-tag">Python / Programming</span>
-            <span class="skill-tag">English Communication</span>
-            <span class="skill-tag">Data Analysis</span>
-            <span class="skill-tag">Graphic Design</span>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - แนะนำตัวเอง</title>
+    <!-- ดึงไฟล์ CSS ตกแต่งเข้ามาใช้งาน -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ฟอนต์ภาษาไทย Sarabun -->
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ส่วนหัว / โปรไฟล์ -->
+    <header class="hero">
+        <div class="container hero-content">
+            <!-- ใส่ชื่อไฟล์รูปภาพของคุณตรง src -->
+            <img src="IMG_4195.jpeg" alt="รูปโปรไฟล์" class="profile-img">
+            <h1>สวัสดีครับ/ค่ะ [ชื่อ-นามสกุล]</h1>
+            <p class="subtitle">นักเรียนผู้มีความสนใจในด้าน [สาขา/คณะที่สมัคร]</p>
         </div>
-    </div>
-</section>
+    </header>
+
+    <!-- ประวัติส่วนตัว -->
+    <section class="container section">
+        <h2>ประวัติส่วนตัว (About Me)</h2>
+        <div class="card">
+            <p><strong>ชื่อ-นามสกุล:</strong> [ชื่อ-นามสกุล]</p>
+            <p><strong>โรงเรียน:</strong> [ชื่อโรงเรียน]</p>
+            <p><strong>แผนการเรียน:</strong> [เช่น วิทยาศาสตร์-คณิตศาสตร์]</p>
+            <p><strong>คติประจำใจ:</strong> "[ข้อความหรือเป้าหมายของคุณ]"</p>
+        </div>
+    </section>
+
+    <!-- ประวัติการศึกษา -->
+    <section class="container section">
+        <h2>ประวัติการศึกษา (Education)</h2>
+        <div class="card">
+            <ul>
+                <li><strong>ระดับมัธยมศึกษาตอนปลาย:</strong> [ชื่อโรงเรียน] (GPAX: X.XX)</li>
+                <li><strong>ระดับมัธยมศึกษาตอนต้น:</strong> [ชื่อโรงเรียน]</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ทักษะและความสามารถ -->
+    <section class="container section">
+        <h2>ทักษะและความสามารถ (Skills)</h2>
+        <div class="card">
+            <div class="skills-grid">
+                <span class="skill-tag">Communication</span>
+                <span class="skill-tag">Python / Programming</span>
+                <span class="skill-tag">English Communication</span>
+                <span class="skill-tag">Data Analysis</span>
+                <span class="skill-tag">Graphic Design</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ผลงานและกิจกรรม -->
+    <section class="container section">
+        <h2>ผลงานและกิจกรรม (Activities & Projects)</h2>
+        <div class="grid">
+            <div class="card activity-card">
+                <h3>กิจกรรม/โครงการที่ 1</h3>
+                <p class="tag">บทบาท: [เช่น หัวหน้าโครงการ / ผู้พัฒนา]</p>
+                <p>อธิบายรายละเอียดกิจกรรม ผลลัพธ์ หรือสิ่งที่ได้เรียนรู้จากกิจกรรมนี้ย่อๆ</p>
+                <a href="#" class="btn-link" target="_blank">ดูเกียรติบัตร / รายละเอียด</a>
+            </div>
+            <div class="card activity-card">
+                <h3>กิจกรรม/โครงการที่ 2</h3>
+                <p class="tag">บทบาท: [เช่น ผู้เข้าร่วม / อาสาสมัคร]</p>
+                <p>อธิบายรายละเอียดกิจกรรม ผลลัพธ์ หรือสิ่งที่ได้เรียนรู้จากกิจกรรมนี้ย่อๆ</p>
+                <a href="#" class="btn-link" target="_blank">ดูเกียรติบัตร / รายละเอียด</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ช่องทางการติดต่อ -->
+    <section class="container section">
+        <h2>ช่องทางการติดต่อ (Contact)</h2>
+        <div class="card">
+            <p><strong>Email:</strong> your.email@example.com</p>
+            <p><strong>Phone:</strong> 08X-XXX-XXXX</p>
+            <div class="contact-buttons">
+                <a href="mailto:your.email@example.com" class="btn-contact">📧 ส่งอีเมลหาฉัน</a>
+                <a href="https://github.com/s34847" target="_blank" class="btn-contact btn-github">🐙 ดู GitHub Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Portfolio Website. Created with GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
