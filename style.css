@@ -214,3 +214,118 @@ footer {
     object-position: top;
     border-radius: 8px;
 }
+/* เพิ่มความนุ่มนวลให้กับการเคลื่อนไหว */
+* {
+    transition: all 0.25s ease-in-out;
+}
+
+/* เพิ่มความน่าสนใจให้การ์ดกิจกรรม */
+.activity-card {
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #fce4ec;
+    border-left: 5px solid var(--accent-pink); /* เพิ่มแถบสีเน้นด้านซ้าย */
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 15px rgba(224, 122, 149, 0.05);
+}
+
+.activity-card:hover {
+    transform: translateY(-4px); /* ลอยขึ้นเมื่อ Hover */
+    box-shadow: 0 10px 25px rgba(224, 122, 149, 0.15);
+}
+
+/* หัวข้อกิจกรรม */
+.activity-card h3 {
+    font-size: 1.25rem;
+    color: #2c1e23;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ป้ายสถานะ/สถานที่ */
+.tag {
+    display: inline-block;
+    background-color: #fff0f5;
+    color: var(--accent-pink);
+    font-size: 0.82rem;
+    padding: 4px 12px;
+    border-radius: 15px;
+    margin-bottom: 14px;
+    font-weight: 600;
+    border: 1px solid #f8bbd0;
+}
+
+/* ส่วนแสดงรูปภาพ */
+.activity-card .img-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin: 15px 0;
+}
+
+.activity-card .img-container img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center 20%; /* จุดโฟกัสใบหน้า */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.activity-card .img-container img:hover {
+    transform: scale(1.02); /* ขยายรูปนิดหน่อยเวลาเมาส์ชี้ */
+}
+
+/* ป้ายแสดงทักษะที่ได้รับ (Key Skill Badges) */
+.skill-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 12px 0;
+}
+
+.badge {
+    background-color: #f8bbd0;
+    color: #5c1d2e;
+    font-size: 0.78rem;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+/* ตกแต่งเนื้อหาคำอธิบาย */
+.activity-card p {
+    font-size: 0.95rem;
+    color: #55444b;
+    margin-bottom: 8px;
+}
+
+.activity-card p strong {
+    color: #3d2c33;
+}
+
+/* ปุ่มกดดูลายรายละเอียด */
+.btn-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    padding: 6px 14px;
+    background-color: #fff0f5;
+    color: var(--accent-pink);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    border: 1px solid #f8bbd0;
+}
+
+.btn-link:hover {
+    background-color: var(--accent-pink);
+    color: #ffffff;
+    text-decoration: none;
+}
