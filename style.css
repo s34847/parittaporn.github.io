@@ -451,3 +451,54 @@ body {
         grid-template-columns: 1fr;
     }
 }
+/* ==========================================
+   ส่วนจัดระเบียบรูปภาพเพิ่มเติม (Sub-Gallery)
+   ========================================== */
+
+.act-gallery-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--accent-dark);
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.act-sub-images {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 14px;
+    overflow-x: auto; /* ให้สไลด์ซ้าย-ขวาได้ถ้ามีรูปเยอะ */
+    padding-bottom: 6px;
+}
+
+.act-sub-images img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid var(--border);
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.act-sub-images img:hover {
+    transform: scale(1.1);
+    border-color: var(--accent);
+    box-shadow: 0 4px 10px rgba(216, 27, 96, 0.3);
+}
+
+/* แถบสกรอลล์รูปภาพแนวนอนแบบโทนสีชมพู */
+.act-sub-images::-webkit-scrollbar {
+    height: 4px;
+}
+.act-sub-images::-webkit-scrollbar-track {
+    background: transparent;
+}
+.act-sub-images::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 10px;
+}
+.act-sub-images::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+}
