@@ -3,220 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PARITTAPORN P. — Digital Portfolio</title>
+    <title>Portfolio | ภริตพร พรพัฒนทรัพย์</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Dynamic Background Blobs -->
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-
-    <div class="portfolio-wrapper container">
-
-        <!-- Header Profile Card -->
-        <header class="hero-card glass-panel">
-            <div class="hero-avatar">
-                <img src="IMG_4195.jpeg" alt="ภริตพร พรพัฒนทรัพย์">
-                <span class="status-badge">Available for TCAS 70</span>
+    <header class="hero">
+        <div class="hero-container">
+            <div class="profile-frame">
+                <img src="IMG_4195.jpeg" alt="นางสาวภริตพร พรพัฒนทรัพย์" class="profile-img">
+                <span class="online-badge" title="พร้อมสำหรับการศึกษาต่อ"></span>
             </div>
-            <div class="hero-info">
-                <div class="tag-pill">STUDENT PORTFOLIO</div>
+            <div class="hero-text">
+                <span class="badge-tag">STUDENT PORTFOLIO</span>
                 <h1>นางสาวภริตพร พรพัฒนทรัพย์</h1>
-                <p class="eng-name">PARITTAPORN PORNPATTANASAP</p>
-                <p class="bio">นักเรียนชั้น ม.6 แผนการเรียนวิทยาศาสตร์-คณิตศาสตร์ (MSEP) โรงเรียนบ้านบึง "อุตสาหกรรมนุเคราะห์"</p>
-                
-                <div class="interests-container">
-                    <span class="focus-chip">💡 Business Management</span>
-                    <span class="focus-chip">🎯 Digital Marketing</span>
-                    <span class="focus-chip">📦 Logistics & Supply Chain</span>
+                <p class="school-text">โรงเรียนบ้านบึง "อุตสาหกรรมนุเคราะห์" (MSEP Program)</p>
+                <div class="highlight-tags">
+                    <span>💡 Business Management</span>
+                    <span>🎯 Digital Marketing</span>
+                    <span>📦 Logistics & Supply Chain</span>
                 </div>
             </div>
-        </header>
-
-        <!-- Quick Stats Grid -->
-        <div class="stats-grid">
-            <div class="stat-card glass-panel">
-                <div class="stat-number">3.71</div>
-                <div class="stat-label">GPAX (เกรดเฉลี่ยสะสม)</div>
-            </div>
-            <div class="stat-card glass-panel">
-                <div class="stat-number">16+</div>
-                <div class="stat-label">ชั่วโมงจิตอาสา รพ.รามาธิบดี</div>
-            </div>
-            <div class="stat-card glass-panel">
-                <div class="stat-number">6+</div>
-                <div class="stat-label">การเข้าร่วม Open House & Camps</div>
-            </div>
         </div>
+    </header>
 
-        <!-- Bento Grid Main Layout -->
-        <div class="bento-layout">
+    <main class="container">
 
-            <!-- Section: Education & Quote -->
-            <div class="bento-card glass-panel highlight-border">
-                <h2>✨ ตัวตนและทัศนคติ</h2>
-                <blockquote class="motto-box">
-                    "ไม่แข่งกับใคร แค่ทำให้ดีกว่าตัวเองเมื่อวานก็พอ"
-                </blockquote>
+        <!-- Stats Bar -->
+        <section class="stats-bar">
+            <div class="stat-item">
+                <span class="stat-num">3.71</span>
+                <span class="stat-label">GPAX สะสม</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-num">16+</span>
+                <span class="stat-label">ชม. จิตอาสา รพ.รามาฯ</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-num">6+</span>
+                <span class="stat-label">Open House & Camps</span>
+            </div>
+        </section>
+
+        <!-- About & Skills Grid -->
+        <div class="info-grid">
+            <section class="card">
+                <h2>👤 ประวัติส่วนตัว</h2>
                 <div class="info-list">
-                    <div class="info-item">
-                        <span class="info-icon">🏫</span>
-                        <div>
-                            <strong>โรงเรียนบ้านบึง "อุตสาหกรรมนุเคราะห์"</strong>
-                            <p>แผนการเรียนวิทยาศาสตร์-คณิตศาสตร์ (MSEP)</p>
-                        </div>
-                    </div>
+                    <p><strong>ชื่อ-นามสกุล:</strong> ภริตพร พรพัฒนทรัพย์ (PARITTAPORN PORNPATTANASAP)</p>
+                    <p><strong>แผนการเรียน:</strong> วิทยาศาสตร์-คณิตศาสตร์ (MSEP)</p>
+                    <p class="motto">"ไม่แข่งกับใคร แค่ทำให้ดีกว่าตัวเองเมื่อวานก็พอ"</p>
                 </div>
-            </div>
+            </section>
 
-            <!-- Section: Skills -->
-            <div class="bento-card glass-panel">
-                <h2>⚡ ทักษะความสามารถ (Skills)</h2>
-                <div class="skill-cloud">
-                    <span class="sk-tag">🧩 Critical Thinking</span>
-                    <span class="sk-tag">🔄 Adaptability & Agility</span>
-                    <span class="sk-tag">🇬🇧 English Communication</span>
-                    <span class="sk-tag">🤝 Collaboration</span>
-                    <span class="sk-tag">⏰ Time Management</span>
-                    <span class="sk-tag">💖 Service Mind</span>
+            <section class="card">
+                <h2>💡 ทักษะความสามารถ</h2>
+                <div class="skills-wrapper">
+                    <span class="skill-chip">🧩 Problem Solving</span>
+                    <span class="skill-chip">🔄 Adaptability</span>
+                    <span class="skill-chip">🇬🇧 English Comm.</span>
+                    <span class="skill-chip">🤝 Collaboration</span>
+                    <span class="skill-chip">⏰ Time Management</span>
+                    <span class="skill-chip">✨ Service Mind</span>
                 </div>
-            </div>
-
-            <!-- Section: Open House & Academic -->
-            <div class="bento-card glass-panel col-span-2">
-                <h2>🎓 ประวัติวิชาการ & ค่ายศึกษาต่อ</h2>
-                <div class="timeline-items">
-                    <div class="t-item">
-                        <div class="t-bullet"></div>
-                        <div class="t-content">
-                            <strong>การสอบแข่งขันโอลิมปิกวิชาการ (สอวน. POSN)</strong>
-                            <p>ศูนย์สอบมหาวิทยาลัยบูรพา</p>
-                        </div>
-                    </div>
-                    <div class="t-item">
-                        <div class="t-bullet"></div>
-                        <div class="t-content">
-                            <strong>การเข้าร่วมเปิดบ้านวิชาการ (Open House 2025)</strong>
-                            <p>Chula Open House | TU Open House | Mahidol PTOT Open House | SWU Open House | "TU Gether" Camp</p>
-                        </div>
-                    </div>
-                    <div class="t-item">
-                        <div class="t-bullet"></div>
-                        <div class="t-content">
-                            <strong>หลักสูตรวุฒิบัตรและการพัฒนาตนเอง</strong>
-                            <p>หลักสูตรอุ่นใจไซเบอร์ (สพฐ. x AIS) | หลักสูตรต้านทุจริตศึกษา (ป.ป.ช.) | English Nirin | SmartMathPro</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            </section>
         </div>
 
-        <!-- Activities Section -->
-        <section class="activities-section">
-            <h2 class="section-title">📌 ผลงานและกิจกรรมโดดเด่น (Featured Activities)</h2>
+        <!-- Academic & Camps -->
+        <section class="card full-card">
+            <h2>🎓 กิจกรรมวิชาการ & ค่ายศึกษาต่อ</h2>
+            <ul class="academic-timeline">
+                <li>
+                    <span class="bullet"></span>
+                    <div>
+                        <strong>การสอบแข่งขันโอลิมปิกวิชาการ (สอวน. POSN)</strong>
+                        <p>ศูนย์สอบมหาวิทยาลัยบูรพา</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="bullet"></span>
+                    <div>
+                        <strong>งานเปิดบ้านวิชาการ (Open House 2025)</strong>
+                        <p>Chula Open House | TU Open House | Mahidol PTOT Open House | SWU Open House | "TU Gether" Camp</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="bullet"></span>
+                    <div>
+                        <strong>การอบรมและหลักสูตรวุฒิบัตร</strong>
+                        <p>อุ่นใจไซเบอร์ (สพฐ. x AIS) | ต้านทุจริตศึกษา (ป.ป.ช.) | English Nirin | SmartMathPro</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
 
+        <!-- Featured Activities -->
+        <section class="activities-section">
+            <h2>📌 ผลงานและกิจกรรม</h2>
             <div class="activity-grid">
 
-                <!-- Activity Card 1 -->
-                <article class="act-card glass-panel">
-                    <div class="act-media">
+                <article class="act-card">
+                    <div class="act-img-box">
                         <img src="activity-1.jpg" alt="งานศิลปหัตถกรรม">
-                        <span class="act-badge gold">🥇 เหรียญทอง</span>
+                        <span class="act-tag gold">🥇 เหรียญทอง</span>
                     </div>
-                    <div class="act-body">
-                        <span class="act-category">สพม.ชลบุรี ระยอง</span>
+                    <div class="act-content">
                         <h3>งานศิลปหัตถกรรมนักเรียน ครั้งที่ 72</h3>
-                        <p>รางวัลระดับเหรียญทอง การประกวดโครงงานอาชีพ ระดับชั้น ม.4 - ม.6</p>
-                        <a href="contest.jpg" target="_blank" class="glass-btn">ดูลายรายละเอียด</a>
+                        <p>รางวัลระดับเหรียญทอง การประกวดโครงงานอาชีพ ระดับชั้น ม.4 - ม.6 (สพม.ชลบุรี ระยอง)</p>
+                        <a href="contest.jpg" target="_blank" class="link-btn">ดูรายละเอียด ➔</a>
                     </div>
                 </article>
 
-                <!-- Activity Card 2 -->
-                <article class="act-card glass-panel">
-                    <div class="act-media">
+                <article class="act-card">
+                    <div class="act-img-box">
                         <img src="ramavol-1.jpg" alt="จิตอาสารามาธิบดี">
-                        <span class="act-badge pink">🏥 16 ชม. จิตอาสา</span>
+                        <span class="act-tag pink">🏥 จิตอาสา</span>
                     </div>
-                    <div class="act-body">
-                        <span class="act-category">คณะแพทยศาสตร์ โรงพยาบาลรามาธิบดี</span>
-                        <h3>กิจกรรมจิตอาสารามาธิบดี</h3>
-                        <p>ปฏิบัติงานสนับสนุนและอำนวยความสะดวกแก่ผู้ป่วยและผู้มาใช้บริการ</p>
-                        <a href="cert-ramavolunteer.png" target="_blank" class="glass-btn">ดูลายรายละเอียด</a>
+                    <div class="act-content">
+                        <h3>จิตอาสารามาธิบดี (16 ชั่วโมง)</h3>
+                        <p>ปฏิบัติงานสนับสนุนและอำนวยความสะดวกแก่ผู้ป่วย ณ โรงพยาบาลรามาธิบดี</p>
+                        <a href="cert-ramavolunteer.png" target="_blank" class="link-btn">ดูรายละเอียด ➔</a>
                     </div>
                 </article>
 
-                <!-- Activity Card 3 -->
-                <article class="act-card glass-panel">
-                    <div class="act-media">
-                        <img src="staff-2.jpg" alt="คณะกรรมการห้องรับรอง">
-                        <span class="act-badge purple">🤝 คณะกรรมการ</span>
+                <article class="act-card">
+                    <div class="act-img-box">
+                        <img src="staff-2.jpg" alt="สตาฟศิลปหัตถกรรม">
+                        <span class="act-tag purple">🤝 คณะกรรมการ</span>
                     </div>
-                    <div class="act-body">
-                        <span class="act-category">งานศิลปหัตถกรรมนักเรียน ครั้งที่ 73</span>
+                    <div class="act-content">
                         <h3>คณะกรรมการประจำห้องรับรองครู</h3>
-                        <p>ต้อนรับและอำนวยความสะดวกครูผู้ควบคุมทีม ศูนย์การแข่งขันคอมพิวเตอร์</p>
-                        <a href="cert-staff.jpg" target="_blank" class="glass-btn">ดูลายรายละเอียด</a>
+                        <p>ปฏิบัติหน้าที่ฝ่ายต้อนรับและอำนวยความสะดวกในงานศิลปหัตถกรรมนักเรียน ครั้งที่ 73</p>
+                        <a href="cert-staff.jpg" target="_blank" class="link-btn">ดูรายละเอียด ➔</a>
                     </div>
                 </article>
 
-                <!-- Activity Card 4 -->
-                <article class="act-card glass-panel">
-                    <div class="act-media">
+                <article class="act-card">
+                    <div class="act-img-box">
                         <img src="cpr-1.jpg" alt="อบรม CPR">
-                        <span class="act-badge red">🚑 First Aid & CPR</span>
+                        <span class="act-tag red">🚑 CPR & AED</span>
                     </div>
-                    <div class="act-body">
-                        <span class="act-category">โรงพยาบาลบ้านบึง</span>
-                        <h3>การกู้ชีพขั้นพื้นฐาน (CPR & AED)</h3>
-                        <p>ผ่านการฝึกอบรมเชิงปฏิบัติการการช่วยฟื้นคืนชีพและการใช้เครื่อง AED</p>
-                        <a href="cert-cpr.jpg" target="_blank" class="glass-btn">ดูลายรายละเอียด</a>
-                    </div>
-                </article>
-
-                <!-- Activity Card 5 -->
-                <article class="act-card glass-panel">
-                    <div class="act-media">
-                        <img src="ปลูกป่า2.jpg" alt="ปลูกป่าจิตอาสา">
-                        <span class="act-badge green">🌱 จิตอาสาอนุรักษ์</span>
-                    </div>
-                    <div class="act-body">
-                        <span class="act-category">มูลนิธิวิถีธรรมชลบุรี</span>
-                        <h3>ทริปอาสาปลูกป่าฮีลใจไปกับพี่</h3>
-                        <p>ลงพื้นที่ฟื้นฟูธรรมชาติและอนุรักษ์สิ่งแวดล้อม ณ จังหวัดฉะเชิงเทรา</p>
-                        <a href="ปลูกป่า.jpg" target="_blank" class="glass-btn">ดูลายรายละเอียด</a>
+                    <div class="act-content">
+                        <h3>การปฐมพยาบาลและการกู้ชีพขั้นพื้นฐาน</h3>
+                        <p>ผ่านการฝึกอบรมเชิงปฏิบัติการ CPR & AED โดยโรงพยาบาลบ้านบึง</p>
+                        <a href="cert-cpr.jpg" target="_blank" class="link-btn">ดูรายละเอียด ➔</a>
                     </div>
                 </article>
 
-                <!-- Activity Card 6 -->
-                <article class="act-card glass-panel">
-                    <div class="act-media">
-                        <img src="ดูเด็ก1.jpg" alt="ค่ายคุณธรรม">
-                        <span class="act-badge pink">💖 พัฒนาจิตใจ</span>
+                <article class="act-card">
+                    <div class="act-img-box">
+                        <img src="ปลูกป่า2.jpg" alt="ปลูกป่าอาสา">
+                        <span class="act-tag green">🌱 จิตอาสา</span>
                     </div>
-                    <div class="act-body">
-                        <span class="act-category">มูลนิธิวิถีธรรมชลบุรี</span>
+                    <div class="act-content">
+                        <h3>โครงการทริปอาสาปลูกป่า</h3>
+                        <p>ร่วมกิจกรรมฟื้นฟูธรรมชาติและสิ่งแวดล้อม ณ จ.ฉะเชิงเทรา กับมูลนิธิวิถีธรรมชลบุรี</p>
+                        <a href="ปลูกป่า.jpg" target="_blank" class="link-btn">ดูรายละเอียด ➔</a>
+                    </div>
+                </article>
+
+                <article class="act-card">
+                    <div class="act-img-box">
+                        <img src="ดูเด็ก1.jpg" alt="ค่าย IS THIS GOOD">
+                        <span class="act-tag pink">💖 ค่ายคุณธรรม</span>
+                    </div>
+                    <div class="act-content">
                         <h3>ค่าย IS THIS GOOD V.3</h3>
-                        <p>เข้าร่วมค่ายส่งเสริมคุณธรรม จริยธรรม และการตระหนักรู้คุณค่าในตนเอง</p>
-                        <a href="ดูเด็ก.jpg" target="_blank" class="glass-btn">ดูลายรายละเอียด</a>
+                        <p>เข้าร่วมกิจกรรมส่งเสริมคุณธรรม จริยธรรม และการพัฒนาจิตใจ</p>
+                        <a href="ดูเด็ก.jpg" target="_blank" class="link-btn">ดูรายละเอียด ➔</a>
                     </div>
                 </article>
 
             </div>
         </section>
 
-        <!-- Footer / Contact Floating Bar -->
-        <footer class="contact-floating glass-panel">
-            <div class="contact-text">
-                <h3>📬 Contact & Connection</h3>
-                <p>Email: prarit.porn2551@gmail.com | IG: pxritz._ | Tel: 094-391-5166</p>
+        <!-- Contact Section -->
+        <section class="card contact-card">
+            <div class="contact-info">
+                <h2>📬 ช่องทางการติดต่อ</h2>
+                <p>📷 Instagram: <strong>pxritz._</strong> | ✉️ Email: <strong>prarit.porn2551@gmail.com</strong></p>
+                <p>📞 โทร: <strong>094-391-5166</strong> | 📍 โรงเรียนบ้านบึง "อุตสาหกรรมนุเคราะห์"</p>
             </div>
-            <a href="portfolio.pdf" target="_blank" class="download-cta">
-                <span>📄 Download Portfolio PDF</span>
-            </a>
-        </footer>
+            <a href="portfolio.pdf" target="_blank" class="pdf-btn">📄 ดาวน์โหลด Portfolio (PDF)</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© PARITTAPORN PORNPATTANASAP — All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
 
     </div>
 
