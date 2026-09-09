@@ -498,6 +498,74 @@ body {
 .act-sub-images::-webkit-scrollbar-thumb {
     background: var(--border);
     border-radius: 10px;
+    /* ==========================================
+   แถบเมนูสลับพาร์ท (Tab Navigation)
+   ========================================== */
+
+/* จัดตำแหน่งแถบปุ่มให้อยู่ตรงกลางหน้าจอ */
+.top-nav-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0 15px 0;
+    position: sticky;
+    top: 15px;
+    z-index: 999;
+}
+
+/* กรอบสีขาวมนทรงแคปซูล */
+.tab-nav {
+    display: flex;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 6px;
+    border-radius: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    gap: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* ปุ่มแต่ละปุ่ม */
+.tab-btn {
+    border: none;
+    background: transparent;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* เอาเมาส์ชี้ปุ่ม */
+.tab-btn:hover {
+    color: #ff5c8d;
+}
+
+/* ปุ่มที่ถูกเลือกใช้งานอยู่ */
+.tab-btn.active {
+    background-color: #ff5c8d; /* โทนสีชมพูตามเว็บเดิมของคุณ */
+    color: #ffffff;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(255, 92, 141, 0.3);
+}
+
+/* ซ่อน/แสดง เนื้อหาของแต่ละพาร์ท */
+.page-tab {
+    display: none; /* ซ่อนไว้ก่อนทั้งหมด */
+}
+
+.page-tab.active-page {
+    display: block; /* แสดงเฉพาะพาร์ทที่กดเลือก */
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* เอฟเฟกต์ค่อยๆ แสดงเมื่อสลับพาร์ท */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 }
 .act-sub-images::-webkit-scrollbar-thumb:hover {
     background: var(--accent);
