@@ -12,10 +12,10 @@
     <!-- แถบปุ่มกดสลับพาร์ทด้านบน -->
     <div class="top-nav-wrapper">
         <div class="tab-nav">
-            <button class="tab-btn active" onclick="switchTab('home')">หน้าแรก</button>
-            <button class="tab-btn" onclick="switchTab('about')">เกี่ยวกับฉัน</button>
-            <button class="tab-btn" onclick="switchTab('academic')">วิชาการ & ค่าย</button>
-            <button class="tab-btn" onclick="switchTab('activities')">ผลงาน & กิจกรรม</button>
+            <button class="tab-btn active" onclick="switchTab(event, 'home')">หน้าแรก</button>
+            <button class="tab-btn" onclick="switchTab(event, 'about')">เกี่ยวกับฉัน</button>
+            <button class="tab-btn" onclick="switchTab(event, 'academic')">วิชาการ & ค่าย</button>
+            <button class="tab-btn" onclick="switchTab(event, 'activities')">ผลงาน & กิจกรรม</button>
         </div>
     </div>
 
@@ -289,24 +289,27 @@
         </footer>
     </div>
 
-    <!-- โค้ด JavaScript สำหรับสั่งงานให้ปุ่มกดสลับหน้าทำงาน -->
+    <!-- โค้ดควบคุมปุ่มกดสลับหน้า -->
     <script>
-        function switchTab(tabId) {
-            // ซ่อนทุกหน้า
+        function switchTab(evt, tabId) {
+            // ซ่อนทุกพาร์ท
             const allTabs = document.querySelectorAll('.page-tab');
-            allTabs.forEach(tab => tab.classList.remove('active-page'));
+            allTabs.forEach(tab => {
+                tab.classList.remove('active-page');
+            });
 
-            // แสดงเฉพาะหน้าที่กดเลือก
+            // แสดงเฉพาะพาร์ทที่กด
             const targetTab = document.getElementById(tabId);
             if (targetTab) {
                 targetTab.classList.add('active-page');
             }
 
-            // เปลี่ยนสถานะไฮไลท์ของปุ่มกด
+            // เปลี่ยนปุ่มกดสีชมพูตามตัวเลือก
             const allBtns = document.querySelectorAll('.tab-btn');
-            allBtns.forEach(btn => btn.classList.remove('active'));
-            
-            event.currentTarget.classList.add('active');
+            allBtns.forEach(btn => {
+                btn.classList.remove('active');
+            });
+            evt.currentTarget.classList.add('active');
         }
     </script>
 
