@@ -1,0 +1,7 @@
+my-portfolio/
+├── index.html       (หน้าแรก)
+├── about.html       (เกี่ยวกับฉัน)
+├── academic.html    (วิชาการ & ค่าย)
+├── activities.html  (ผลงาน & กิจกรรม)
+├── style.css        (ตกแต่งสไตล์ทุกหน้า)
+└── [รูปภาพต่างๆ เช่น IMG_4195.jpeg, activity-1.jpg ฯลฯ]
